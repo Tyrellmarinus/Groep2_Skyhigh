@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+
+
+.banner1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background: url("Website fotos/INLOG.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.banner1 .content{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.banner2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background: url("Website fotos/glider_recreational_aircraft_613218.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.text-sci {
+    font-size: 40px;
+    line-height: 1;
+    color: black;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.text-sci h2 span{
+    font-size: 25px;
+    top: 50px;
+    left: 50px;
+}
+
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+    top: 50px;
+    left: 50px;
+}
+
+.banner1 .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    background: none;
+}
+
+.banner2 .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    background: none;
+}
+
+
+
+.header-bar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+
+
+.logo{
+    width: 220px;
+    float: left;
+    height: auto;
+    cursor: pointer;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.header-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.header-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #71090B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.header-bar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.header-bar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffff;
+}
+
+
+.container .logreg-box{
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    width: calc(100% - 58%);
+    height: 100%;
+}
+
+.logreg-box .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+
+
+
+.text-sci h2{
+    font-size: 40px;
+    text-align: left;
+
+
+}
+
+.text-sci h2 span{
+    font-size: 25px;
+    text-align: left;
+
+}
+
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.text-sci{
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    text-align: left;
+}
+
+.content{
+    text-align: left;
+}
+
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+.input-box input:focus~label {
+    top: -5px;
+}
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.form-box  .remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin:  25px 0 15px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input {
+    accent-color: #e4e4e4;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #e4e4e4;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #00d084;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: darkred;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.form-box .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    top: 50px;
+}
+
+.login-register p a {
+    color: #e4e4e4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+.containerr{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient();
+    background-position: center;
+    background-size: cover;
+

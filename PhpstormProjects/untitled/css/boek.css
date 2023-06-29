@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 220px;
+    float: left;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.navbar{
+    position: fixed;
+    top: -55px;
+    left: -80px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: darkgreen;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+.mainbg{
+    background-image: url("Website fotos/background1.jpg");
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form{
+    width: 700px;
+    height: 700px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 40px 0;
+
+}
+
+.form-text h1 span img{
+    margin: 0 10px;
+}
+
+.form-text h1{
+    color: white;
+    font-family: Arial;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.form-text p{
+    color: white;
+    font-family: Arial;
+  font-size: large;
+}
+
+
+.main-form div{
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+}
+
+.main-form div input{
+width: 100%;
+    font-family: Arial;
+    background: none;
+    border: 1px solid darkred;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div select{
+    width: 100%;
+    font-family: Arial;
+    background: none;
+    border: 1px solid darkred;
+    font-size: 20px;
+    color: white;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div span{
+    width: 100%;
+    font-family: Arial;
+    color: white;
+    font-size: 25px;
+}
+
+#verzenden{
+    width: 100%;
+    text-align: center;
+}
+#submit #verzenden input{
+    width: 200px;
+    font-family: Arial;
+    background-color: darkred !important;
+    color: black; !important;
+
+}
+
+#verzenden #submit input:hover{
+    font-family: Arial;
+    width: 200px;
+    font-family: Arial;
+    background-color: darkred !important;
+    color: white; !important;
+
+}
+
+#verzenden #submit input:active{
+    width: 200px;
+font-size: 19px;
+    background-color: darkred !important;
+    color: black; !important;
+
+}

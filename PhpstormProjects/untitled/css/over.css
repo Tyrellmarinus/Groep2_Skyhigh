@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.navbar{
+    position: fixed;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: 20px 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+
+
+.logo{
+    width: 220px;
+    float: left;
+    height: auto;
+    cursor: pointer;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #71090B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+p{
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 20px;
+}
+
+button{
+    width: 180px;
+    color: #000000;
+    font-size: 12px;
+    padding: 12px 0;
+    background:#ffffff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card{
+    width: 2000px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url("Website fotos/bckground.jpg");
+}
+.card2 {
+    background-image: url("Website fotos/pxfuel.com.jpg");
+}
+.card3{
+    background-image: url("Website fotos/INLOG.jpg");
+}
+.card4{
+    background-image: url("Website fotos/bckground4.jpg");
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+h5{
+    color: #ffffff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 0 15px #000000;
+    font-size: 8px;
+}
+
+
+
+
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Website fotos/about uspic.jpg");
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
